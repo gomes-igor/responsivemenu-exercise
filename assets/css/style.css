@@ -1,0 +1,117 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+/* logo */
+.logo {
+    cursor: pointer;
+}
+
+.logo h1 {
+    color: #FFFFFF;
+}
+
+span {
+    color: #006dfc;
+}
+
+/* navigation */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+/* button cta */
+.login-cta button {
+    border: none;
+    background: #006dfc;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-cta button a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+/* mobile */
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+/* js responsive open menu */
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-cta {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-cta {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-cta button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
